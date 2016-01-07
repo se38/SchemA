@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PROG NAME="Z_SCHEMA_ATTRIBUTES_SUPER" VARCL="X" DBAPL="S" DBNA="D$" SUBC="I" RMAND="001" FIXPT="X" LDBNAME="D$S" UCCHECK="X">
+ <textPool>
+  <language SPRAS="D">
+   <textElement ID="R" ENTRY="schema.org: INCLUDE append all attributes of super class" LENGTH="56 "/>
+  </language>
+ </textPool>
+ <source>*&amp;---------------------------------------------------------------------*
+*&amp;  Include  z_schema_attributes_super
+*&amp;---------------------------------------------------------------------*
+
+*&amp;---------------------------------------------------------------------*
+*&amp; SchemA
+*&amp; The schema.org ABAP Framework
+*&amp; Copyright (C) 2016 Uwe Fetzer together with the SCN ABAP community
+*&amp;
+*&amp; Project home: https://github.com/se38/SchemA
+*&amp;
+*&amp; Published under Apache License, Version 2.0
+*&amp; http://www.apache.org/licenses/LICENSE-2.0.html
+*&amp;---------------------------------------------------------------------*
+
+  super-&gt;append_attributes( CHANGING c_json = c_json ).
+  INCLUDE z_schema_attributes.</source>
+</PROG>
