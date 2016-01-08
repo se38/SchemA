@@ -22,7 +22,7 @@
   <LEVL></LEVL>
   <RSTAT></RSTAT>
   <RMAND></RMAND>
-  <RLOAD></RLOAD>
+  <RLOAD>E</RLOAD>
   <FIXPT>X</FIXPT>
   <SSET></SSET>
   <SDATE>00000000</SDATE>
@@ -32,5 +32,12 @@
   <LDBNAME>D$S</LDBNAME>
   <UCCHECK>X</UCCHECK>
  </PROGDIR>
- <TEXTPOOL_TABLE/>
+ <TEXTPOOL_TABLE>
+  <TEXTPOOL>
+   <ID>R</ID>
+   <KEY></KEY>
+   <ENTRY>schema.org: INCLUDE append all attributes of super class</ENTRY>
+   <LENGTH>56 </LENGTH>
+  </TEXTPOOL>
+ </TEXTPOOL_TABLE>
 </abapGit>
