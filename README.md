@@ -1,7 +1,7 @@
 # SchemA
 The [schema.org](http://schema.org) ABAP Framework
 
-See [Blog post on SAP Community Network](http://scn.sap.com/community/developer-center/cross-technology/blog/2015/01/23/neo4a-the-neo4j-abap-connector) <-- update Link!
+See [Blog post on SAP Community Network](http://scn.sap.com/community/abap/connectivity/blog/2016/01/08/google-knowledge-graph-search-api-schemaorg-and-json-ld)
  
 ## Required Packages
 * Netweaver ABAP Stack 7.40 SP8 or higher
