@@ -1,4 +1,4 @@
-"! <p class="shorttext synchronized" lang="de">schema.org: THING The most generic type of item</p>
+"! <p class="shorttext synchronized" lang="en">schema.org: THING The most generic type of item</p>
 "! <h1>SchemA</h1>
 "! The schema.org ABAP Framework <br/>
 "! Copyright (C) 2016 Uwe Fetzer together with the SCN ABAP community <br/>
@@ -12,6 +12,8 @@ CLASS zcl_schema_thing DEFINITION
   CREATE PUBLIC .
 
   PUBLIC SECTION.
+    TYPES: tt_things TYPE STANDARD TABLE OF REF TO zcl_schema_thing WITH EMPTY KEY.
+
     METHODS:
       constructor IMPORTING i_json TYPE string OPTIONAL,
       get_additional_type RETURNING VALUE(r_result) TYPE string,
@@ -48,7 +50,7 @@ CLASS zcl_schema_thing DEFINITION
       create_table
         IMPORTING i_type          TYPE seoclsname
                   i_json          TYPE string
-        RETURNING VALUE(r_result) TYPE z_schema_thing_t.
+        RETURNING VALUE(r_result) TYPE tt_things.
 
   PRIVATE SECTION.
     CLASS-DATA:

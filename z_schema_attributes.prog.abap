@@ -56,7 +56,7 @@
       "*--- call the getter method of this attribute ---*
       DATA attribute_value   TYPE string.
       DATA attribute_value_o TYPE REF TO zcl_schema_thing.
-      DATA attribute_value_t TYPE z_schema_thing_t.
+      DATA attribute_value_t TYPE zcl_schema_thing=>tt_things.
 
       DATA parameters TYPE abap_parmbind_tab.
       DATA parameter TYPE abap_parmbind.
