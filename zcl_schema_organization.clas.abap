@@ -52,8 +52,8 @@ CLASS zcl_schema_organization DEFINITION
       set_event_json IMPORTING i_event TYPE string,
       get_fax_number RETURNING VALUE(r_result) TYPE string,
       set_fax_number IMPORTING i_fax_number TYPE string,
-      get_founder RETURNING VALUE(r_result) TYPE z_schema_thing_t,
-      set_founder IMPORTING i_founder TYPE z_schema_thing_t,
+      get_founder RETURNING VALUE(r_result) TYPE zcl_schema_thing=>tt_things,
+      set_founder IMPORTING i_founder TYPE zcl_schema_thing=>tt_things,
       set_founder_json IMPORTING i_founder TYPE string,
       get_founding_date RETURNING VALUE(r_result) TYPE d,
       set_founding_date IMPORTING i_founding_date TYPE d,
@@ -142,7 +142,7 @@ CLASS zcl_schema_organization DEFINITION
       "! The fax number.
       fax_number             TYPE string,
       "! A person who founded this organization. Supersedes founders.
-      founder                TYPE z_schema_thing_t,
+      founder                TYPE zcl_schema_thing=>tt_things,
       "! The date that this organization was founded.
       founding_date          TYPE d,
       "! The place where the Organization was founded.

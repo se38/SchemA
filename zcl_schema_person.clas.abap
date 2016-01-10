@@ -21,11 +21,11 @@ CLASS zcl_schema_person DEFINITION
       get_address RETURNING VALUE(r_result) TYPE REF TO zcl_schema_postaladdress,
       set_address IMPORTING i_address TYPE REF TO zcl_schema_postaladdress,
       set_address_json IMPORTING i_address TYPE string,
-      get_children RETURNING VALUE(r_result) TYPE z_schema_thing_t,
-      set_children IMPORTING i_children TYPE z_schema_thing_t,
+      get_children RETURNING VALUE(r_result) TYPE zcl_schema_thing=>tt_things,
+      set_children IMPORTING i_children TYPE zcl_schema_thing=>tt_things,
       set_children_json IMPORTING i_children TYPE string,
-      get_colleague RETURNING VALUE(r_result) TYPE z_schema_thing_t,
-      set_colleague IMPORTING i_colleague TYPE z_schema_thing_t,
+      get_colleague RETURNING VALUE(r_result) TYPE zcl_schema_thing=>tt_things,
+      set_colleague IMPORTING i_colleague TYPE zcl_schema_thing=>tt_things,
       set_colleague_json IMPORTING i_colleague TYPE string,
       get_family_name RETURNING VALUE(r_result) TYPE string,
       set_family_name IMPORTING i_family_name TYPE string,
@@ -47,9 +47,9 @@ CLASS zcl_schema_person DEFINITION
       "! Physical address of the item.
       address         TYPE REF TO zcl_schema_postaladdress,
       "! A child of the person.
-      children        TYPE z_schema_thing_t,
+      children        TYPE zcl_schema_thing=>tt_things,
       "! A colleague of the person. Supersedes colleagues.
-      colleague       TYPE z_schema_thing_t,
+      colleague       TYPE zcl_schema_thing=>tt_things,
       "! Family name. In the U.S., the last name of an Person. This can be used along with givenName instead of the name property.
       family_name     TYPE string,
       "! Given name. In the U.S., the first name of a Person. This can be used along with familyName instead of the name property.
