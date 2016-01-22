@@ -8,10 +8,10 @@ See [Blog post on SAP Community Network](http://scn.sap.com/community/abap/conne
 * [zJSON The ABAP JSON Document class](https://github.com/se38/zJSON) Version 2.28 or higher
 
 ## Installation 
-Clone this repository with [abapGIT](https://github.com/larshp/abapGit) into a package of your choice. Activate all objects despite the fact that there are errors (dependences).
+Clone this repository with [abapGIT](https://github.com/larshp/abapGit) into a package of your choice.
 
 ## Usage
-see wiki ( https://github.com/se38/SchemA/wiki )
+see [wiki](https://github.com/se38/SchemA/wiki)
 
 ## License
 This software is published under the [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html)
